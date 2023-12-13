@@ -1,100 +1,117 @@
 <html>
 
 <head>
-    <title>Embracing Winter 2023: A Comprehensive Guide To Effectively Using Your Winter This Year</title>
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>
- <script src="Source Code.js"></script>
+    <title>Effectively Using Your Winter 2023 To The Fullest</title>
     <style>
         body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            min-height: 100vh;
-            padding: 20px;
             font-family: Arial, sans-serif;
+            padding: 20px;
             text-align: center;
+            background-color: #202B0A;
+            color: #BA9F7B;
         }
 
         h1 {
             margin-top: 20px;
-            color: #333;
+            color: #6A623C;
         }
 
         h2 {
             margin-bottom: 10px;
-            color: #666;
+            color: #7E4B20;
+        }
+
+        p {
+            color: #BA9F7B;
         }
 
         .section {
-            width: 80%;
             display: flex;
-            justify-content: space-between;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
             margin-bottom: 20px;
         }
 
         .section-content {
             width: 45%;
             padding: 20px;
-            background-color: #f5f5f5;
+            background-color: #303B1B;
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            color: #BA9F7B;
         }
 
         img {
             max-width: 100%;
-            height: auto;
-            display: block;
-            margin-bottom: 10px;
             border-radius: 5px;
+            margin-bottom: 10px;
         }
 
-        p {
-            color: #444;
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #1f2b0a;
+            color: #ba9f7b;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            transition: background-color 0.3s ease;
         }
 
-        .widget {
-            margin-top: 20px;
+        .button:hover {
+            background-color: #6a623c;
+            color: #ffffff;
+        }
+
+        .widget-container {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #BA9F7B;
+            border-radius: 8px;
+            color: #BA9F7B;
         }
     </style>
 </head>
 
 <body>
 
-    <h1>Embracing Winter 2023: A Comprehensive Guide To Effectively Using Your Winter This Year</h1>
+    <h1>Effectively Using Your Winter 2023 To The Fullest</h1>
     <h2>Introduction:</h2>
     <p>Winter offers a myriad of unique opportunities and experiences that can be enjoyed with the right approach. This guide is designed to help you make the most of this enchanting season, offering tips, insights, and activities to ensure your winter is both enjoyable and fulfilling.</p>
 
     <div class="section">
         <div class="section-content">
-            <h2>Section 1: Embracing the Cold</h2>
+            <h2>Embracing the Cold</h2>
             <img src="snowman.jpeg" alt="Snowman">
-            <p>Description: Embrace the beauty of winter landscapes while staying warm and comfortable. Enjoy activities like skiing, snowboarding, ice skating, snowshoeing, building snowmen, having snowball fights, or simply shoveling snow. Always check the weather before going out to have fun.</p>
-            <a class="weatherwidget-io" href="https://forecast7.com/en/43d78n79d23/scarborough/" data-label_1="SCARBOROUGH" data-label_2="WEATHER" data-theme="original">SCARBOROUGH WEATHER</a>
-            <script>
-                !function (d, s, id) {
-                    var js, fjs = d.getElementsByTagName(s)[0];
-                    if (!d.getElementById(id)) {
-                        js = d.createElement(s);
-                        js.id = id;
-                        js.src = 'https://weatherwidget.io/js/widget.min.js';
-                        fjs.parentNode.insertBefore(js, fjs);
-                    }
-                }(document, 'script', 'weatherwidget-io-js');
-            </script>
+            <p>Embrace the beauty of winter landscapes while staying warm and comfortable. Enjoy activities like skiing, snowboarding, ice skating, snowshoeing, building snowmen, having snowball fights, or simply shoveling snow. Always check the weather before going out to have fun.</p>
+           
         </div>
 
         <div class="section-content">
-            <h2>Section 2: Cozy Retreats and Warmth</h2>
+            <h2>Cozy Retreats and Warmth</h2>
             <img src="cozy_winter.jpeg" alt="Cozy Winter">
-            <p>Description: Find warmth and comfort indoors by engaging in cozy activities like movie nights, board games, or starting a new hobby. If you're seeking a retreat, explore Ontario winter cabin rentals for a fun time with friends and family.</p>
-            <a href="https://www.ontariocottagerentals.com/winter-rentals/">Rent an Ontario winter cabin getaway!</a>
-            <br>
-            <a href="Indoor Activities.html">Discover indoor activities for a cozy winter!</a>
+            <p>Find warmth and comfort indoors by engaging in cozy activities like movie nights, board games, or starting a new hobby. If you're seeking a retreat, explore Ontario winter cabin rentals for a fun time with friends and family.</p>
+            <a href="https://www.ontariocottagerentals.com/winter-rentals/" class="button">Rent an Ontario winter cabin getaway!</a>
+            <a href="Indoor Activities.html" class="button">Discover indoor activities for a cozy winter!</a>
         </div>
     </div>
 
-    <p>This guide aims to encompass the various facets of winter, from embracing the outdoors to creating warmth within your home. It's all about celebrating the uniqueness and joy that this magical season brings.</p>
+    <!-- Weather Widget -->
+    <div class="widget-container">
+        <a class="weatherwidget-io" href="https://forecast7.com/en/43d78n79d23/scarborough/" data-label_1="SCARBOROUGH" data-label_2="WEATHER" data-theme="original" data-basecolor="#353C12" data-accent="#24300C" data-textcolor="#91815D" data-highcolor="#a74612" data-lowcolor="#2C8F90" data-suncolor="#A67912" data-mooncolor="#BCA17C" data-cloudcolor="#FAE1C7" data-raincolor="#2C8F90">SCARBOROUGH WEATHER</a>
+        <script>
+            ! function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (!d.getElementById(id)) {
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = 'https://weatherwidget.io/js/widget.min.js';
+                    fjs.parentNode.insertBefore(js, fjs);
+                }
+            }(document, 'script', 'weatherwidget-io-js');
+        </script>
+    </div>
 
 </body>
 

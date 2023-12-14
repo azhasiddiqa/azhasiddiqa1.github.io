@@ -1,19 +1,18 @@
-export function sketch() {
 let angle = 0;
 let dots = [];
 
 function setup() {
-  createCanvas(100, 100);
+  createCanvas(100, 150);
   background('#202B0A');
   angleMode(DEGREES);
 }
 
 function draw() {
-  if (dots.length < 40000) {
-    for (i = 0; i < 50; i++) {
+  if (dots.length < 30000) {
+    for (i = 0; i < 20; i++) {
       let x = random(0, width);
       let y = random(0, height);
-      if (sqrt(pow(x - width / 2, 2) + pow(y - height / 2, 2)) <= 100) {
+      if (sqrt(pow(x - width / 2, 2) + pow(y - height / 2, 2)) <= 50) {
         stroke('#1f567c');
         point(x, y);
         dots.push(createVector(x, y));
@@ -27,7 +26,7 @@ function draw() {
 
 //Snowflake
 function Snowflake() {
-  translate(50, 50);
+  translate(50, 75);
   stroke('rgb(83,163,163)');
   strokeWeight(2);
   for (let a = 0; a < 360; a += 60) {
@@ -62,5 +61,3 @@ function Snowflake() {
     //Stubs in the middle
   }
 }//Snowflake
-  
-}

@@ -1,3 +1,4 @@
+export function sketch() {
 let angle = 0;
 let dots = [];
 
@@ -60,5 +61,6 @@ function Snowflake() {
     line(x3, y3, stub4_x, stub4_y);
     //Stubs in the middle
   }
+}//Snowflake
+  
 }
-//Snowflake
